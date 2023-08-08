@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>₹ Online Toll Tax System </title>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+
+
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+		integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<link rel="stylesheet" href="login.css">
+	
+
+</head>
+
+<body>
+<br><br>
+	<div class="box-form">
+		<div class="left">
+			<div class="overlay">
+				<h1>Welcome to Toll plaza</h1>
+				<p>We are here to help you for better satisfaction</p>
+				<span>
+					<p>Login with social media</p>
+					<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i>Login with facebook</a>
+					<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i> Login with Twitter</a>
+					<a href="#"><i class="fa fa-envelope" aria-hidden="true"></i> Login with Email</a>
+				</span>
+			</div>
+		</div>
+
+
+		<div class="right">
+			<h5><i class="fa-dutone-4x fa-right-to-bracket" aria-hidden="true"></i>Login </h5>
+			<br><br><br><br>
+			<p>Don't have an account? <a href="#">Create Your Account</a> it takes less than a minute</p>
+			<form action="" class="form">
+			<div class="inputs">
+				<input type="text" placeholder="mobile number" id="number">
+				<br>
+				<input type="password" placeholder="password" id="password">
+			</div>
+
+			<br><br>
+
+			<div class="remember-me--forget-password">
+
+				<label>
+					<input type="checkbox" name="item" checked />
+					<span class="text-checkbox">Remember me</span>
+				</label>
+				<p> <a href="#">forget password?</a>  </p>
+			</div>
+
+			<br>
+			<input type="submit" value="Login" class="submit-btn" onclick="login()">
+			</form>
+		</div>
+
+	</div>
+	<script>
+		function login(){
+			var number = document.getElementById("number").value;
+			var password = document.getElementById("password").value;
+			if(number=="9876543210" && password=="admin"){
+				window.location.assign("index.html");
+				alert("Login Successful");
+			}
+			else{
+				alert("Invalid credential");
+				return;
+			}
+		}
+	</script>
+
+</body>
+
+</html>
